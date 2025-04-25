@@ -3,9 +3,8 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Megabroker - Brokers de Seguros</title>
+    <title>Megabroker | Seguros para vos y tu empresa</title>
     <script src="https://cdn.tailwindcss.com"></script>
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet" />
     <style>
       body {
@@ -13,44 +12,81 @@
       }
     </style>
   </head>
-  <body class="bg-white text-gray-800">
+  <body class="text-gray-800">
+
     <!-- Header -->
-    <header class="bg-blue-900 text-white sticky top-0 z-50 shadow-md">
-      <div class="max-w-6xl mx-auto px-4 py-4 flex justify-between items-center">
+    <header class="bg-blue-900 text-white sticky top-0 z-50 shadow">
+      <div class="max-w-7xl mx-auto flex justify-between items-center px-6 py-4">
         <h1 class="text-2xl font-bold">Megabroker</h1>
-        <nav>
-          <ul class="flex gap-6 text-sm font-semibold">
-            <li><a href="#servicios" class="hover:text-blue-300">Servicios</a></li>
-            <li><a href="#nosotros" class="hover:text-blue-300">Nosotros</a></li>
-            <li><a href="#contacto" class="hover:text-blue-300">Contacto</a></li>
-          </ul>
+        <nav class="space-x-6 text-sm font-semibold">
+          <a href="#servicios" class="hover:text-blue-300">Servicios</a>
+          <a href="#nosotros" class="hover:text-blue-300">Nosotros</a>
+          <a href="#testimonios" class="hover:text-blue-300">Clientes</a>
+          <a href="#faq" class="hover:text-blue-300">Preguntas</a>
+          <a href="#contacto" class="hover:text-blue-300">Contacto</a>
         </nav>
       </div>
     </header>
 
     <!-- Hero -->
-    <section class="bg-blue-800 text-white text-center py-24 px-4">
-      <h2 class="text-4xl font-bold mb-4">Tu tranquilidad es nuestro compromiso</h2>
-      <p class="text-lg mb-6">Protegé lo que más te importa con el respaldo de expertos en seguros.</p>
-      <a href="#contacto" class="bg-white text-blue-800 font-semibold px-6 py-3 rounded shadow hover:bg-gray-100 transition">Solicitá una consulta</a>
+    <section class="bg-blue-800 text-white py-24 text-center px-4">
+      <h2 class="text-4xl md:text-5xl font-bold mb-4">Protegé lo que más importa</h2>
+      <p class="text-lg md:text-xl mb-6">Soluciones integrales en seguros para personas y empresas.</p>
+      <a href="#contacto" class="bg-white text-blue-800 font-semibold px-6 py-3 rounded hover:bg-gray-100 transition">Solicitá asesoramiento</a>
     </section>
 
     <!-- Servicios -->
     <section id="servicios" class="py-20 bg-gray-50">
-      <div class="max-w-6xl mx-auto px-4">
+      <div class="max-w-7xl mx-auto px-4">
         <h3 class="text-3xl font-bold text-center mb-12">Nuestros Servicios</h3>
         <div class="grid md:grid-cols-3 gap-8">
-          <div class="bg-white p-6 rounded-lg shadow hover:shadow-lg transition">
-            <h4 class="text-xl font-semibold mb-2">Seguros para Autos</h4>
-            <p class="text-gray-600">Cobertura completa, terceros y más. Asegurá tu vehículo con confianza.</p>
+          <div class="bg-white p-6 rounded-lg shadow text-center">
+            <img src="https://img.icons8.com/ios-filled/100/000000/car.png" class="mx-auto mb-4" />
+            <h4 class="text-xl font-semibold mb-2">Seguros de Autos</h4>
+            <p>Cobertura total, responsabilidad civil, y asistencia en todo el país.</p>
           </div>
-          <div class="bg-white p-6 rounded-lg shadow hover:shadow-lg transition">
+          <div class="bg-white p-6 rounded-lg shadow text-center">
+            <img src="https://img.icons8.com/ios-filled/100/000000/house.png" class="mx-auto mb-4" />
             <h4 class="text-xl font-semibold mb-2">Seguros para el Hogar</h4>
-            <p class="text-gray-600">Protegé tu vivienda frente a imprevistos. Planes a medida.</p>
+            <p>Protegé tu vivienda ante robo, incendio y eventos climáticos.</p>
           </div>
-          <div class="bg-white p-6 rounded-lg shadow hover:shadow-lg transition">
+          <div class="bg-white p-6 rounded-lg shadow text-center">
+            <img src="https://img.icons8.com/ios-filled/100/000000/life.png" class="mx-auto mb-4" />
             <h4 class="text-xl font-semibold mb-2">Seguros de Vida</h4>
-            <p class="text-gray-600">Tu familia protegida siempre. Tranquilidad para el futuro.</p>
+            <p>Resguardá a tu familia con planes adaptados a tus necesidades.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Compañías -->
+    <section class="py-16 bg-white">
+      <div class="max-w-6xl mx-auto px-4 text-center">
+        <h3 class="text-2xl font-bold mb-6">Trabajamos con las mejores aseguradoras del país</h3>
+        <div class="flex flex-wrap justify-center gap-6 grayscale">
+          <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a9/Sancor_Seguros_Logo.svg/320px-Sancor_Seguros_Logo.svg.png" class="h-12" />
+          <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/f/ff/Zurich_Insurance_Group_logo.svg/2560px-Zurich_Insurance_Group_logo.svg.png" class="h-10" />
+          <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/3/3a/Mapfre_logo.svg/2560px-Mapfre_logo.svg.png" class="h-8" />
+        </div>
+      </div>
+    </section>
+
+    <!-- Beneficios -->
+    <section class="bg-gray-100 py-20">
+      <div class="max-w-5xl mx-auto px-4 text-center">
+        <h3 class="text-3xl font-bold mb-10">¿Por qué elegir Megabroker?</h3>
+        <div class="grid md:grid-cols-3 gap-8">
+          <div>
+            <h4 class="font-semibold text-lg mb-2">Asesoramiento Personalizado</h4>
+            <p>Entendemos tu situación y te ofrecemos la mejor cobertura.</p>
+          </div>
+          <div>
+            <h4 class="font-semibold text-lg mb-2">Atención Rápida</h4>
+            <p>Canales directos por WhatsApp, teléfono o presencial.</p>
+          </div>
+          <div>
+            <h4 class="font-semibold text-lg mb-2">Experiencia</h4>
+            <p>Más de 10 años acompañando a personas y empresas.</p>
           </div>
         </div>
       </div>
@@ -58,12 +94,55 @@
 
     <!-- Nosotros -->
     <section id="nosotros" class="py-20 bg-white">
-      <div class="max-w-5xl mx-auto px-4 grid md:grid-cols-2 gap-12 items-center">
+      <div class="max-w-6xl mx-auto px-4 grid md:grid-cols-2 gap-10 items-center">
         <div>
-          <h3 class="text-3xl font-bold mb-4">¿Quiénes somos?</h3>
-          <p class="text-gray-700">En <strong>Megabroker</strong> contamos con más de 10 años de experiencia brindando asesoramiento personalizado en seguros. Trabajamos con las principales compañías del país para ofrecerte el mejor respaldo.</p>
+          <h3 class="text-3xl font-bold mb-4">Sobre Megabroker</h3>
+          <p>Somos una empresa especializada en seguros personales y corporativos. Nuestro objetivo es brindar tranquilidad y respaldo en cada etapa de tu vida o negocio.</p>
+          <ul class="mt-4 list-disc pl-5 text-gray-700">
+            <li>Misión: Proteger a nuestros clientes con excelencia.</li>
+            <li>Visión: Ser referentes en el mercado asegurador nacional.</li>
+            <li>Valores: Compromiso, integridad y cercanía.</li>
+          </ul>
         </div>
-        <img src="https://images.unsplash.com/photo-1603791440384-56cd371ee9a7?auto=format&fit=crop&w=800&q=80" alt="Oficina Megabroker" class="rounded-lg shadow-md" />
+        <img src="https://images.unsplash.com/photo-1573164574396-9d365f2ab41f?auto=format&fit=crop&w=800&q=80" alt="Equipo Megabroker" class="rounded-lg shadow-md" />
+      </div>
+    </section>
+
+    <!-- Testimonios -->
+    <section id="testimonios" class="bg-gray-50 py-20">
+      <div class="max-w-5xl mx-auto px-4 text-center">
+        <h3 class="text-3xl font-bold mb-12">Lo que dicen nuestros clientes</h3>
+        <div class="grid md:grid-cols-2 gap-8">
+          <div class="bg-white p-6 rounded shadow">
+            <p class="italic">“Excelente atención y rapidez. Me ayudaron con todo el proceso de mi seguro de auto.”</p>
+            <h4 class="mt-4 font-semibold">— Lucía Fernández</h4>
+          </div>
+          <div class="bg-white p-6 rounded shadow">
+            <p class="italic">“Confío en Megabroker hace años. Siempre me brindaron soluciones claras y eficaces.”</p>
+            <h4 class="mt-4 font-semibold">— Martín Gómez</h4>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Preguntas Frecuentes -->
+    <section id="faq" class="py-20 bg-white">
+      <div class="max-w-4xl mx-auto px-4">
+        <h3 class="text-3xl font-bold text-center mb-10">Preguntas Frecuentes</h3>
+        <div class="space-y-6">
+          <div>
+            <h4 class="font-semibold text-lg">¿Qué tipos de seguros ofrecen?</h4>
+            <p>Trabajamos con seguros de auto, hogar, vida, salud y seguros empresariales.</p>
+          </div>
+          <div>
+            <h4 class="font-semibold text-lg">¿Cómo contrato un seguro?</h4>
+            <p>Podés contactarnos por WhatsApp, correo o venir a nuestra oficina. Te asesoramos sin compromiso.</p>
+          </div>
+          <div>
+            <h4 class="font-semibold text-lg">¿Atienden emergencias?</h4>
+            <p>Sí, ofrecemos asistencia las 24 hs a través de las aseguradoras con las que trabajamos.</p>
+          </div>
+        </div>
       </div>
     </section>
 
@@ -74,15 +153,19 @@
         <form class="space-y-6">
           <input type="text" placeholder="Nombre completo" required class="w-full p-3 border border-gray-300 rounded" />
           <input type="email" placeholder="Correo electrónico" required class="w-full p-3 border border-gray-300 rounded" />
-          <textarea placeholder="Escribí tu consulta..." required rows="5" class="w-full p-3 border border-gray-300 rounded"></textarea>
+          <textarea placeholder="Mensaje o consulta..." required rows="5" class="w-full p-3 border border-gray-300 rounded"></textarea>
           <button type="submit" class="bg-blue-800 text-white font-semibold px-6 py-3 rounded hover:bg-blue-900 transition">Enviar mensaje</button>
         </form>
+        <div class="mt-10 text-center text-sm text-gray-600">
+          📍 Av. Central 1234, Córdoba Capital · ☎ 351-123-4567 · 📧 contacto@megabroker.com.ar
+        </div>
       </div>
     </section>
 
     <!-- Footer -->
-    <footer class="bg-blue-900 text-white py-6 text-center">
-      <p class="text-sm">&copy; 2025 Megabroker. Todos los derechos reservados.</p>
+    <footer class="bg-blue-900 text-white py-6 text-center text-sm">
+      <p>&copy; 2025 Megabroker SRL. Todos los derechos reservados.</p>
     </footer>
+
   </body>
 </html>
