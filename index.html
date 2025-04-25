@@ -65,7 +65,7 @@
         <h3 class="text-2xl font-bold mb-6">Trabajamos con las mejores aseguradoras del país</h3>
         <div class="flex flex-wrap justify-center gap-6 grayscale">
           <img src="img/sancor.svg" class="h-12" />
-          <img src="img/zurich.svg" class="h-10" />
+          <img src="img/surich.svg" class="h-10" />
           <img src="img/mapfre.svg" class="h-8" />
         </div>
       </div>
@@ -125,26 +125,59 @@
       </div>
     </section>
 
-    <!-- Preguntas Frecuentes -->
-    <section id="faq" class="py-20 bg-white">
-      <div class="max-w-4xl mx-auto px-4">
-        <h3 class="text-3xl font-bold text-center mb-10">Preguntas Frecuentes</h3>
-        <div class="space-y-6">
-          <div>
-            <h4 class="font-semibold text-lg">¿Qué tipos de seguros ofrecen?</h4>
-            <p>Trabajamos con seguros de auto, hogar, vida, salud y seguros empresariales.</p>
-          </div>
-          <div>
-            <h4 class="font-semibold text-lg">¿Cómo contrato un seguro?</h4>
-            <p>Podés contactarnos por WhatsApp, correo o venir a nuestra oficina. Te asesoramos sin compromiso.</p>
-          </div>
-          <div>
-            <h4 class="font-semibold text-lg">¿Atienden emergencias?</h4>
-            <p>Sí, ofrecemos asistencia las 24 hs a través de las aseguradoras con las que trabajamos.</p>
-          </div>
+   <!-- Preguntas Frecuentes -->
+<section id="faq" class="py-20 bg-white">
+  <div class="max-w-4xl mx-auto px-4">
+    <h3 class="text-3xl font-bold text-center mb-10">Preguntas Frecuentes</h3>
+    <div class="space-y-6">
+      <!-- Acordeón 1 -->
+      <div class="bg-gray-100 rounded-lg shadow-md">
+        <button class="w-full text-left px-6 py-4 font-semibold text-lg text-gray-800 bg-gray-200 hover:bg-gray-300 rounded-t-lg focus:outline-none" onclick="toggleAccordion(1)">
+          ¿Qué tipos de seguros ofrecen?
+        </button>
+        <div id="accordion-1" class="hidden px-6 pb-4 bg-gray-50">
+          <p>Trabajamos con seguros de auto, hogar, vida, salud y seguros empresariales.</p>
         </div>
       </div>
-    </section>
+
+      <!-- Acordeón 2 -->
+      <div class="bg-gray-100 rounded-lg shadow-md">
+        <button class="w-full text-left px-6 py-4 font-semibold text-lg text-gray-800 bg-gray-200 hover:bg-gray-300 rounded-t-lg focus:outline-none" onclick="toggleAccordion(2)">
+          ¿Cómo contrato un seguro?
+        </button>
+        <div id="accordion-2" class="hidden px-6 pb-4 bg-gray-50">
+          <p>Podés contactarnos por WhatsApp, correo o venir a nuestra oficina. Te asesoramos sin compromiso.</p>
+        </div>
+      </div>
+
+      <!-- Acordeón 3 -->
+      <div class="bg-gray-100 rounded-lg shadow-md">
+        <button class="w-full text-left px-6 py-4 font-semibold text-lg text-gray-800 bg-gray-200 hover:bg-gray-300 rounded-t-lg focus:outline-none" onclick="toggleAccordion(3)">
+          ¿Atienden emergencias?
+        </button>
+        <div id="accordion-3" class="hidden px-6 pb-4 bg-gray-50">
+          <p>Sí, ofrecemos asistencia las 24 hs a través de las aseguradoras con las que trabajamos.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- JavaScript para el acordeón -->
+<script>
+  function toggleAccordion(id) {
+    const accordionContent = document.getElementById(`accordion-${id}`);
+    const allAccordions = document.querySelectorAll('[id^="accordion-"]');
+
+    allAccordions.forEach((content) => {
+      if (content !== accordionContent) {
+        content.classList.add('hidden');
+      }
+    });
+
+    accordionContent.classList.toggle('hidden');
+  }
+</script>
 
     <!-- Contacto -->
     <section id="contacto" class="py-20 bg-gray-50">
