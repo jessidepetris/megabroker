@@ -1,76 +1,88 @@
 <!DOCTYPE html>
 <html lang="es">
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Megabroker - Brokers de Seguros</title>
-  <link rel="stylesheet" href="ast/style.css" />
-</head>
-<body>
-  <header>
-    <div class="container">
-      <h1>Megabroker</h1>
-      <nav>
-        <ul>
-          <li><a href="#servicios">Servicios</a></li>
-          <li><a href="#nosotros">Nosotros</a></li>
-          <li><a href="#contacto">Contacto</a></li>
-        </ul>
-      </nav>
-    </div>
-  </header>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Megabroker - Brokers de Seguros</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet" />
+    <style>
+      body {
+        font-family: 'Inter', sans-serif;
+      }
+    </style>
+  </head>
+  <body class="bg-white text-gray-800">
+    <!-- Header -->
+    <header class="bg-blue-900 text-white sticky top-0 z-50 shadow-md">
+      <div class="max-w-6xl mx-auto px-4 py-4 flex justify-between items-center">
+        <h1 class="text-2xl font-bold">Megabroker</h1>
+        <nav>
+          <ul class="flex gap-6 text-sm font-semibold">
+            <li><a href="#servicios" class="hover:text-blue-300">Servicios</a></li>
+            <li><a href="#nosotros" class="hover:text-blue-300">Nosotros</a></li>
+            <li><a href="#contacto" class="hover:text-blue-300">Contacto</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
 
-  <section class="hero">
-    <div class="container">
-      <h2>Tu tranquilidad es nuestro compromiso</h2>
-      <p>Protegé lo que más te importa con el respaldo de expertos en seguros.</p>
-      <a href="#contacto" class="btn">Solicitá una consulta</a>
-    </div>
-  </section>
+    <!-- Hero -->
+    <section class="bg-blue-800 text-white text-center py-24 px-4">
+      <h2 class="text-4xl font-bold mb-4">Tu tranquilidad es nuestro compromiso</h2>
+      <p class="text-lg mb-6">Protegé lo que más te importa con el respaldo de expertos en seguros.</p>
+      <a href="#contacto" class="bg-white text-blue-800 font-semibold px-6 py-3 rounded shadow hover:bg-gray-100 transition">Solicitá una consulta</a>
+    </section>
 
-  <section id="servicios" class="section">
-    <div class="container">
-      <h3>Servicios</h3>
-      <div class="cards">
-        <div class="card">
-          <h4>Seguros para Autos</h4>
-          <p>Cobertura completa, terceros y más. Asegurá tu vehículo con confianza.</p>
-        </div>
-        <div class="card">
-          <h4>Seguros para el Hogar</h4>
-          <p>Protegé tu vivienda frente a imprevistos. Planes a medida.</p>
-        </div>
-        <div class="card">
-          <h4>Seguros de Vida</h4>
-          <p>Tu familia protegida siempre. Tranquilidad para el futuro.</p>
+    <!-- Servicios -->
+    <section id="servicios" class="py-20 bg-gray-50">
+      <div class="max-w-6xl mx-auto px-4">
+        <h3 class="text-3xl font-bold text-center mb-12">Nuestros Servicios</h3>
+        <div class="grid md:grid-cols-3 gap-8">
+          <div class="bg-white p-6 rounded-lg shadow hover:shadow-lg transition">
+            <h4 class="text-xl font-semibold mb-2">Seguros para Autos</h4>
+            <p class="text-gray-600">Cobertura completa, terceros y más. Asegurá tu vehículo con confianza.</p>
+          </div>
+          <div class="bg-white p-6 rounded-lg shadow hover:shadow-lg transition">
+            <h4 class="text-xl font-semibold mb-2">Seguros para el Hogar</h4>
+            <p class="text-gray-600">Protegé tu vivienda frente a imprevistos. Planes a medida.</p>
+          </div>
+          <div class="bg-white p-6 rounded-lg shadow hover:shadow-lg transition">
+            <h4 class="text-xl font-semibold mb-2">Seguros de Vida</h4>
+            <p class="text-gray-600">Tu familia protegida siempre. Tranquilidad para el futuro.</p>
+          </div>
         </div>
       </div>
-    </div>
-  </section>
+    </section>
 
-  <section id="nosotros" class="section light">
-    <div class="container">
-      <h3>Sobre Megabroker</h3>
-      <p>Somos una empresa con más de 10 años de experiencia en el mercado asegurador. Brindamos asesoramiento personalizado y trabajamos con las principales compañías del país.</p>
-    </div>
-  </section>
+    <!-- Nosotros -->
+    <section id="nosotros" class="py-20 bg-white">
+      <div class="max-w-5xl mx-auto px-4 grid md:grid-cols-2 gap-12 items-center">
+        <div>
+          <h3 class="text-3xl font-bold mb-4">¿Quiénes somos?</h3>
+          <p class="text-gray-700">En <strong>Megabroker</strong> contamos con más de 10 años de experiencia brindando asesoramiento personalizado en seguros. Trabajamos con las principales compañías del país para ofrecerte el mejor respaldo.</p>
+        </div>
+        <img src="https://images.unsplash.com/photo-1603791440384-56cd371ee9a7?auto=format&fit=crop&w=800&q=80" alt="Oficina Megabroker" class="rounded-lg shadow-md" />
+      </div>
+    </section>
 
-  <section id="contacto" class="section">
-    <div class="container">
-      <h3>Contacto</h3>
-      <form>
-        <input type="text" placeholder="Nombre completo" required />
-        <input type="email" placeholder="Correo electrónico" required />
-        <textarea placeholder="Escribí tu consulta..." required></textarea>
-        <button type="submit">Enviar</button>
-      </form>
-    </div>
-  </section>
+    <!-- Contacto -->
+    <section id="contacto" class="py-20 bg-gray-50">
+      <div class="max-w-3xl mx-auto px-4">
+        <h3 class="text-3xl font-bold text-center mb-8">Contacto</h3>
+        <form class="space-y-6">
+          <input type="text" placeholder="Nombre completo" required class="w-full p-3 border border-gray-300 rounded" />
+          <input type="email" placeholder="Correo electrónico" required class="w-full p-3 border border-gray-300 rounded" />
+          <textarea placeholder="Escribí tu consulta..." required rows="5" class="w-full p-3 border border-gray-300 rounded"></textarea>
+          <button type="submit" class="bg-blue-800 text-white font-semibold px-6 py-3 rounded hover:bg-blue-900 transition">Enviar mensaje</button>
+        </form>
+      </div>
+    </section>
 
-  <footer>
-    <div class="container">
-      <p>&copy; 2025 Megabroker. Todos los derechos reservados.</p>
-    </div>
-  </footer>
-</body>
+    <!-- Footer -->
+    <footer class="bg-blue-900 text-white py-6 text-center">
+      <p class="text-sm">&copy; 2025 Megabroker. Todos los derechos reservados.</p>
+    </footer>
+  </body>
 </html>
